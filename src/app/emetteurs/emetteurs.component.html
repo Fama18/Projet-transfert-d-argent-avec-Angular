@@ -1,15 +1,17 @@
 <div class="container">
   <div class="card shadow mb-4">
     <div class="card-body">
-      <table >
+      <table class="table table-striped">
         <thead>
-        <tr>
-          <th>Liste de emmetteurs</th>
-        </tr>
+        <tr><th>Id</th><th>Numero d'identite nationale</th><th>Nom</th><th>Prenom</th><th>Telephone</th></tr>
         </thead>
         <tbody *ngFor="let emetteur of emetteurs">
         <tr >
-          <td>{{emetteur}}</td>
+          <td>{{emetteur.id}}</td>
+          <td>{{emetteur.numCni}}</td>
+          <td>{{emetteur.nom}}</td>
+          <td>{{emetteur.prenom}}</td>
+          <td>{{emetteur.telephone}}</td>
         </tr>
         </tbody>
       </table>

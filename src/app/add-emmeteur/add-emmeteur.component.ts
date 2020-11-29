@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Emetteur } from "../model/emetteur.model";
 
 @Component({
   selector: 'app-add-emmeteur',
@@ -6,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddEmmeteurComponent implements OnInit {
 
+  newEmetteur = new Emetteur();
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addEmetteur() {
+    console.log(this.newEmetteur);
   }
 
 }

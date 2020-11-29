@@ -1,1 +1,35 @@
-<p>add-emmeteur works!</p>
+<div class="container">
+  <div>
+    <h2>Ajouter un Emetteur :</h2>
+  </div>
+  <form>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label>ID</label>
+      <input type="number" [(ngModel)]="newEmetteur.id"
+             name="id" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4" >
+      <label >Numero CNI</label>
+      <input type="text" [(ngModel)]= "newEmetteur.numCni"
+             name="numCni" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label >Nom</label>
+      <input type="text" [(ngModel)]= "newEmetteur.nom"
+             name="Nom" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label>Prenom</label>
+      <input type="text" [(ngModel)]= "newEmetteur.prenom"
+             name="prenom" class="form-control">
+    </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label>Telephone</label>
+      <input type="text" [(ngModel)]= "newEmetteur.telephone"
+             name="telephone" class="form-control">
+    </div>
+    <div class="mt-2">
+      <button type="submit" (click)="addEmetteur()" class="btn btn-success">Ajouter</button>
+    </div>
+  </form>
+</div>
